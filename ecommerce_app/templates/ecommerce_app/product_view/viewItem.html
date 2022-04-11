@@ -1,0 +1,92 @@
+{% extends "ecommerce_app/main/main.html" %}
+{% load static %}
+{% block content %}
+    <div class="row align-items-md-stretch mt-5">
+        <div class="h-100 p-3 border rounded-3 border border-success" style="background-color: #ffffff;">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="{% static 'ecommerce_app/images/shirt.jpg' %}" class="rounded float-start" alt="...">
+                </div>
+                <div class="col-md-8 text-left">
+                    <h2 class="text-dark" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                        Death Metal T-shirt Black
+                    </h2>
+                    <hr class="text-success">
+                    <div class="start-rating fs-4">
+                        <span class="text-warning fa fa-star checked"></span>
+                        <span class="text-warning fa fa-star checked"></span>
+                        <span class="text-warning fa fa-star checked"></span>
+                        <span class="text-warning fa fa-star checked"></span>
+                        <span class="fa fa-star"></span> (4.0 Review)
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col">
+                            <div class="size">
+                                <div class="dropdown">
+                                    <button class="btn btn-dark dropdown-toggle" style="background-color: #641E16;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      Choose Size
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item" href="#">Action</a>
+                                      <a class="dropdown-item" href="#">Another action</a>
+                                      <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="mt-2 text-dark">
+                                <i class="fa-solid fa-check text-success"></i>
+                                Insured Shipping and Tracking
+                            </p>
+                            <p class="text-dark">
+                                <i class="fa-solid fa-check text-success"></i>
+                                Delivery within all provinces available
+                            </p>
+                            <p class="text-dark">
+                                <i class="fa-solid fa-check text-success"></i>
+                                30 days return
+                            </p>
+                        </div>
+                        <div class="col">
+                            <h2 style="color: #145A32;">₱600 - ₱750</h2>
+                            <div class="shipping-location-fees">
+                                <div class="btn-group">
+                                    <button class="btn btn-dark btn-sm dropdown-toggle" style="background-color: #641E16;" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      Shipping To
+                                    </button>
+                                    <div class="dropdown-menu">
+                                      ...
+                                    </div>
+                                </div>
+                                <p class="text-dark mt-2">
+                                    <i class="fa-solid fa-truck-fast text-success"></i>
+                                    Shipping Fee: 
+                                </p>
+                                <div class="form-group row">
+                                    <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm text-dark">Quantity:</label>
+                                    <div class="col-sm-10">
+                                      <input type="number" value="1" class="form-control form-control-sm" id="colFormLabelSm">
+                                    </div>
+                                    <p class="fs-6 text-dark fw-light mt-2">98 pieces available</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-warning btn-lg">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    Add to Cart
+                                </button>
+                                <button type="button" class="btn btn-outline-success btn-lg">
+                                    Buy Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

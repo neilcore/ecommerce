@@ -1,5 +1,247 @@
 {% extends "ecommerce_app/main/main.html" %}
+{% load static %}
+{% block carousel %}
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
 
+            <div class="container">
+            <div class="carousel-caption text-start">
+                <h1>Up to 30% OFF</h1>
+                <p>Some representative placeholder content for the first slide of the carousel.</p>
+                <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+            </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+            <div class="container">
+            <div class="carousel-caption">
+                <h1>Another example headline.</h1>
+                <p>Some representative placeholder content for the second slide of the carousel.</p>
+                <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+            </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+            <div class="container">
+            <div class="carousel-caption text-end">
+                <h1>One more for good measure.</h1>
+                <p>Some representative placeholder content for the third slide of this carousel.</p>
+                <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+            </div>
+            </div>
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+{% endblock %}
 {% block content %}
+    <h2 class="text-dark">New Release</h2>
+    <hr class="text-success">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+            <div class="card shadow-sm border border-success"">
+                <a href="#">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                </a>
     
+                <div class="card-body">
+                <p class="card-text">
+                    <span class="text-dark">₱600.00</span><br>
+                    Bring me the horizon - That's the Spirit<br>
+                    T-shirt
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-md btn-warning">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Add to cart
+                        </button>
+                        <button type="button" class="btn btn-md btn-success">Order</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-sm border border-success"">
+                <a href="#">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                </a>
+    
+                <div class="card-body">
+                <p class="card-text">
+                    <span class="text-dark">₱300.00</span><br>
+                    Bring me the horizon (2021) Cap
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-md btn-warning">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Add to cart
+                        </button>
+                        <button type="button" class="btn btn-md btn-success">Order</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-sm border border-success"">
+                <a href="#">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                </a>
+    
+                <div class="card-body">
+                <p class="card-text">
+                    <span class="text-dark">₱750.00</span><br>
+                    Metallica Hoddie
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-md btn-warning">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Add to cart
+                        </button>
+                        <button type="button" class="btn btn-md btn-success">Order</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+            <div class="card shadow-sm border border-success">
+                <a href="#">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                </a>
+    
+                <div class="card-body">
+                <p class="card-text">
+                    <span class="text-dark">₱700.00</span><br>
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-md btn-warning">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Add to cart
+                        </button>
+                        <button type="button" class="btn btn-md btn-success">Order</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-sm border border-success"">
+                <a href="#">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                </a>
+    
+                <div class="card-body">
+                <p class="card-text">
+                    <span class="text-dark">₱700.00</span><br>
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-md btn-warning">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Add to cart
+                        </button>
+                        <button type="button" class="btn btn-md btn-success">Order</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-sm border border-success"">
+                <a href="#">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                </a>
+    
+                <div class="card-body">
+                <p class="card-text">
+                    <span class="text-dark">₱1,200.00</span><br>
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-md btn-warning">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Add to cart
+                        </button>
+                        <button type="button" class="btn btn-md btn-success">Order</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2 class="text-dark mt-5 mb-3">Categories</h2>
+    <div class="row">
+        <div class="col text-center">
+            <p>
+                <a href="" style="text-decoration: none;">
+                    <img src="{% static 'ecommerce_app/images/cap.jpg' %}" class="img-thumbnail rounded-circle rounded mx-auto d-block" width="30%" height="30%">
+                    Head Gears
+                </a>
+            </p>
+        </div>
+        <div class="col text-center">
+            <p>
+                <a href="#" style="text-decoration: none;">
+                    <img src="{% static 'ecommerce_app/images/shirt.jpg' %}" class="img-thumbnail rounded-circle rounded mx-auto d-block" width="30%" height="30%">
+                    T-Shirts
+                </a>
+            </p>
+        </div>
+        <div class="col text-center">
+            <p>
+                <a href="#" style="text-decoration: none;">
+                    <img src="{% static 'ecommerce_app/images/hoddie.jpg' %}" class="img-thumbnail rounded-circle rounded mx-auto d-block" width="30%" height="30%">
+                    Hoddies
+                </a>
+            </p>
+        </div>
+        <div class="col text-center">
+            <p>
+                <a href="" style="text-decoration: none;">
+                    <img src="{% static 'ecommerce_app/images/tumbler.jpg' %}" class="img-thumbnail rounded-circle rounded mx-auto d-block" width="30%" height="30%">
+                    Thumblers
+                </a>
+            </p>
+        </div>
+        <div class="col text-center">
+            <p>
+                <a href="" style="text-decoration: none;">
+                    <img src="{% static 'ecommerce_app/images/mugs.jpg' %}" class="img-thumbnail rounded-circle rounded mx-auto d-block" width="30%" height="30%">
+                    Mugs
+                </a>
+            </p>
+        </div>
+    </div>
 {% endblock %}
